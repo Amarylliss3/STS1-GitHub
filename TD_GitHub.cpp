@@ -51,15 +51,49 @@ int plusGrand(int a, int b, int c) {
 
 bool estPair(int nb)
 {
-	
-	if (nb % 0 && nb / 7)
+	if (nb % 2 == 0) || (nb % 7 == 0){
 		return true;
-	else
-		return false
+	}
+	else{
+		return false;
+	}
 }
 
+int sommeNombre(int nb);
+{
+    int somme = 0;
+    for (int i = n; i >= 1; i--) {
+        somme += i;
+    }
+    return somme;
+}
 
+float salaireNet(int salaire) 
+{
+    float charges = salaire * 0.23f;
 
+    float salaireNet = salaire - charges;
+
+    float prime = salaireNet * 0.12f;
+
+    salaireNet += prime;
+
+    return salaireNet;
+}
+
+int plusPetit(int a, int b, int c) {
+    int plusPetit = a;
+
+    if (b < plusPetit) {
+        plusPetit = b;
+    }
+
+    if (c < plusPetit) {
+        plusPetit = c;
+    }
+
+    return plusPetit;
+}
 
 
 
