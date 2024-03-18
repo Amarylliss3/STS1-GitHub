@@ -11,6 +11,15 @@
 
 //Fonctions réalisées par l'étudiant 2 :
 
+bool estPair(int nb)
+{
+	
+	if (nb % 0 && nb / 7)
+		return true;
+	else
+		return false
+}
+
 
 
 
