@@ -102,3 +102,23 @@ int plusPetit(int a, int b, int c) {
 
 
 //Fonctions réalisées par l'étudiant 3 :
+
+#include <stdbool.h>
+
+bool estImpair(int nb) {
+    return nb % 2 != 0;
+}
+
+float moyenne(int nb1, int nb2, int nb3) {
+    return (nb1 + nb2 + nb3) / 3.0;
+}
+
+float reduction(int prix, int reduc) {
+    return prix * (1 - reduc / 100.0);
+}
+
+int nombreMedian(int a, int b, int c) {
+    if ((a - b) * (c - a) >= 0) return a;
+    else if ((b - a) * (c - b) >= 0) return b;
+    else return c;
+}
